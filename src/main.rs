@@ -20,7 +20,7 @@ fn main() {
 
     let bender_name = matches.value_of("name").unwrap_or("bender");
 
-    let ping_regex = format!("^{}", bender_name);
+    let ping_regex = format!("^{} ping", bender_name);
     let ping_cmd = Regex::new(&ping_regex).unwrap();
 
     loop {
